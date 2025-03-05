@@ -1,0 +1,92 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: grid;
+
+    place-content: center;
+    grid-template-columns: 320px;
+    gap: 2rem;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: min(4rem, 7%);
+
+    color: white;
+    border-radius: 10px;
+}
+
+
+#daniel { background-color: hsl(263, 55%, 52%); }
+
+#jonh { background-color: hsl(217, 19%, 35%); }
+
+#jane, #kira  { background-color: white; color: hsl(224, 10%, 45%);}
+
+#patrick { background-color: hsl(219, 29%, 14%); }
+
+
+.box .profile {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.box .profile-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 0.5rem;
+}
+
+#daniel .profile-pic {
+    background-image: url(./images/image-daniel.jpg);
+}
+
+#jonh .profile-pic {
+    background-image: url(./images/image-jonathan.jpg);
+}
+
+#jane .profile-pic {
+    background-image: url(./images/image-jeanette.jpg);
+}
+
+#patrick .profile-pic {
+    background-image: url(./images/image-patrick.jpg);
+}
+
+#kira .profile-pic {
+    background-image: url(./images/image-kira.jpg);
+}
+
+.box .profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box .big-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    padding-bottom: 1rem;
+}
+
+.box .small-text {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
